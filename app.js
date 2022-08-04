@@ -3,7 +3,7 @@ const app = express();
 const port = 3001;
 
 const mongoose = require('mongoose');
-const url = 'mongodb://127.0.0.1/usersDetails';
+const url = 'mongodb://127.0.0.1/employeesDetails';
 
 const api = require('./routes/api');
 

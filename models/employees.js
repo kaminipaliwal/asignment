@@ -1,24 +1,19 @@
 const mongoose = require('mongoose');
 
-const usersSchema = new mongoose.Schema({
+const employeesSchema = new mongoose.Schema({
 
     name : {
         type: String,
         required: true
     },
-    email: {
+    date_of_birth: {
         type:String,
         required:true
     },
-
-    phone: {
+    home_address: {
         type:String,
         required:true
     },
-    designation: {
-        type: String,
-        required: true,
-      }
 },{
     timestemps: {
         createdAt: "created_at",
@@ -26,4 +21,4 @@ const usersSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Users', usersSchema);
+module.exports = mongoose.model('Employees', employeesSchema);
